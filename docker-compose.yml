@@ -1,0 +1,21 @@
+# 파일 규격 버전 -> '3'을 기입하면 최신 버전 사용한다는 의미
+version: '3.7.9'
+services:
+  app:
+  # dockerfile을 build 
+    build: .
+    command: 
+    # host에 컨테이너가 공개하는 포트 지정
+    ports:
+      - "8000:8001"
+
+
+
+
+
+
+
+
+      # 참고 url : https://www.44bits.io/ko/post/almost-perfect-development-environment-with-docker-and-docker-compose#docker-compose.yml-%ED%8C%8C%EC%9D%BC
+
+
