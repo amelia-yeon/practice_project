@@ -18,6 +18,7 @@ WORKDIR /app
 
 
 RUN pip3 install poetry
+RUN pip3 install -U python-dotenv
 RUN poetry config virtualenvs.create false
 RUN poetry install --no-dev --no-root
 # poetry로 pyproject.toml에 추가되어 있는 패키지를 설치할 때 사용 하는 명령어는 poetry install 이다.
