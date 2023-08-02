@@ -8,6 +8,7 @@ FROM python:3.7.9
 RUN mkdir /app 
 COPY /app /app
 COPY pyproject.toml /app 
+COPY poetry.lock /app 
 WORKDIR /app
 
 
